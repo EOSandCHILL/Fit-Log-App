@@ -11,14 +11,28 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+      crossorigin=""
+    />
+    <!-- add defer because the order in which the scripts are downloaded is crucial -->
+    <script
+      defer
+      src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+      crossorigin=""
+    ></script>
 
     <script defer src="script.js"></script>
     <title>FitLog</title>
   </head>
   <body>
     <div class="sidebar">
-      <img src="fitloglogo.png" alt="Logo" class="logo" />
+      <img src="fitloglogo3.png" alt="Logo" class="logo" />
 
       <ul class="workouts">
         <form class="form hidden">
