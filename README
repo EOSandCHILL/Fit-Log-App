@@ -1,0 +1,30 @@
+--FitLog App--
+
+FitLog User Stories:
+
+FitLog is a fitness application that allows users, who are also known as "Loggers" to keep track of their fitness journey!
+
+1. This application will allow users to log and keep track of their running workouts using locations, distances, times, pace and steps per minute.
+
+2. This application will allow also users to log and keep track of their cycling workouts using locations, distances, times, speed, and elevation.
+
+3. This application will allow its users to see their fitness journey quickly while they're on the go! Its important to our users to be able to track their progress overtime so they can push harder and reach their next milestone!
+
+4. This application will allow users to see their workouts on a map so they can keep track of where they workout the most! Maybe you have a favorite location and you didnt know!
+
+5. This application will allow users to leave the application, comeback to the application at a later time, and all of their workouts will still be available to view so they can pickup where they left off!
+
+FitLog Features:
+
+1a. Map that a user can click on to add a new workout.
+1b. Geolocation to display map at current location.
+1c. Form to input distances, times, pace and steps per minute.
+
+2a. Form to input distances, times, speed, and elevation.
+
+3a. Displays every logged workout in a list format.
+
+4a. Workouts are all shown on map.
+
+5a. Workout data is stored in the browser using local storage API.
+5b. When the page loads the saved data will be read from the local storage and displayed to the user.
