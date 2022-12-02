@@ -28,7 +28,7 @@ body {
   height: 100vh;
   overscroll-behavior-y: none;
 
-  background-color: #fff;
+  background-color: #4e4e4e;
   padding: 2.5rem;
 
   display: flex;
@@ -43,10 +43,19 @@ a:visited {
 /* SIDEBAR */
 .sidebar {
   flex-basis: 50rem;
-  background-color: var(--color-dark--1);
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+
   padding: 3rem 5rem 4rem 5rem;
   display: flex;
   flex-direction: column;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
 }
 
 .logo {
@@ -194,6 +203,8 @@ a:visited {
   flex: 1;
   height: 100%;
   background-color: var(--color-light--1);
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 /* Popup width is defined in JS using options */
