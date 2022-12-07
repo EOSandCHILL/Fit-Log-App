@@ -2,6 +2,15 @@
 
 Live @ https://fit-log-app.vercel.app/
 
+Technologies used:
+
+- html5
+- css
+- google apis
+- javascript
+- leaflet map api
+- vscode
+
 FitLog User Stories:
 
 FitLog is a fitness application that allows users, who are also known as "Loggers" to keep track of their fitness journey!
