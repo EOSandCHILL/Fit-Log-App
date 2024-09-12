@@ -19,7 +19,6 @@
       integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
       crossorigin=""
     />
-    <!-- add defer because the order in which the scripts are downloaded is crucial -->
     <script
       defer
       src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
@@ -71,57 +70,17 @@
               placeholder="meters"
             />
           </div>
-          <button class="form__btn">OK</button>
+          <!-- Add Workout Button -->
+          <button type="submit" class="btn btn--add-workout">
+            Add Workout
+          </button>
         </form>
 
-        <!-- <li class="workout workout--running" data-id="1234567890">
-          <h2 class="workout__title">Running on April 14</h2>
-          <div class="workout__details">
-            <span class="workout__icon">🏃‍♂️</span>
-            <span class="workout__value">5.2</span>
-            <span class="workout__unit">km</span>
-          </div>
-          <div class="workout__details">
-            <span class="workout__icon">⏱</span>
-            <span class="workout__value">24</span>
-            <span class="workout__unit">min</span>
-          </div>
-          <div class="workout__details">
-            <span class="workout__icon">⚡️</span>
-            <span class="workout__value">4.6</span>
-            <span class="workout__unit">min/km</span>
-          </div>
-          <div class="workout__details">
-            <span class="workout__icon">🦶🏼</span>
-            <span class="workout__value">178</span>
-            <span class="workout__unit">spm</span>
-          </div>
-        </li>
-
-        <li class="workout workout--cycling" data-id="1234567891">
-          <h2 class="workout__title">Cycling on April 5</h2>
-          <div class="workout__details">
-            <span class="workout__icon">🚴‍♀️</span>
-            <span class="workout__value">27</span>
-            <span class="workout__unit">km</span>
-          </div>
-          <div class="workout__details">
-            <span class="workout__icon">⏱</span>
-            <span class="workout__value">95</span>
-            <span class="workout__unit">min</span>
-          </div>
-          <div class="workout__details">
-            <span class="workout__icon">⚡️</span>
-            <span class="workout__value">16</span>
-            <span class="workout__unit">km/h</span>
-          </div>
-          <div class="workout__details">
-            <span class="workout__icon">⛰</span>
-            <span class="workout__value">223</span>
-            <span class="workout__unit">m</span>
-          </div>
-        </li> -->
+        <!-- Workouts list -->
       </ul>
+
+      <!-- Instructions Button -->
+      <button class="btn btn--instructions">Instructions</button>
 
       <p class="copyright">
         &copy; Copyright by
@@ -133,17 +92,25 @@
         >
         2022
       </p>
-      <p class="copyright">
-        Recommended Browser:
-        <a
-          class="linkedin-link"
-          target="_blank"
-          href="https://www.google.com/chrome/"
-          >Chrome</a
-        >
-      </p>
     </div>
 
     <div id="map"></div>
+
+    <!-- Modal -->
+    <div class="modal hidden">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>FitLog Instructions</h2>
+        <p>Welcome to FitLog!</p>
+        <p>Here’s how to use FitLog:</p>
+        <ol>
+          <li>Click on the map to log a new workout.</li>
+          <li>Fill in the details for your workout (type, distance, etc.).</li>
+          <li>Your workout will be saved and displayed on the map.</li>
+          <li>You can click on any workout to see its details.</li>
+        </ol>
+        <p>Enjoy tracking your fitness journey!</p>
+      </div>
+    </div>
   </body>
 </html>

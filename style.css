@@ -46,6 +46,7 @@ a:visited {
   padding: 3rem 5rem 4rem 5rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
 }
@@ -234,4 +235,90 @@ a:visited {
 
 .cycled-popup .leaflet-popup-content-wrapper {
   border-left: 20px solid var(--color-brand--1);
+}
+
+/* Instructions Button */
+.btn--instructions {
+  display: block;
+  width: 100%;
+  margin: 20px 0; /* Space above and below the button */
+  padding: 10px;
+  font-size: 1.4rem;
+  background-color: var(--color-brand--1);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn--instructions:hover {
+  background-color: var(--color-brand--2);
+}
+
+/* Modal styles */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  background-color: white;
+  padding: 10px 20px; /* Reduced padding at top and bottom */
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.modal-content {
+  position: relative;
+}
+
+.modal-content h2,
+.modal-content p,
+.modal-content ol {
+  font-size: 1.6rem; /* Larger text */
+  font-weight: bold; /* Bold text */
+  color: #333; /* Darker text color */
+}
+
+.modal-content p {
+  margin-bottom: 1rem;
+}
+
+.modal-content ol {
+  margin-left: 20px;
+  margin-bottom: 1rem;
+}
+
+.close-btn {
+  position: absolute;
+  top: 5px; /* Adjusted higher */
+  right: 10px; /* Closer to the top-right corner */
+  font-size: 2rem;
+  cursor: pointer;
+  color: #333; /* Darker color for better visibility */
+}
+
+.hidden {
+  display: none;
+}
+
+/* Add Workout Button */
+.btn--add-workout {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 1.4rem;
+  background-color: var(--color-brand--1);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 1.5rem; /* Add space above the button */
+}
+
+.btn--add-workout:hover {
+  background-color: var(--color-brand--2);
 }
